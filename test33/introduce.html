@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>「下一個電商領航者，從這裡開始。」</h2>
+
+<header>
+  <h2>電商科介紹</h2>
+</header>
+<section>
+  <nav>
+    <ul>
+        <li><a href="index.html">首頁</a></li>
+      <li><a href="introduce.html">電子商務科介紹</a></li>
+      <li><a href="about.html">關於我 </a></li> 
+    </ul>
+  </nav>
+  
+  <article>
+    <p>「在這個手指點擊就能驅動全球貿易的時代，我們不只是參與者，更是規則的制定者。電子商務科將帶領你跨越傳統市場的邊界，從數據分析到品牌行銷，從數位工具到實戰創業，在這裡，每一行程式碼與每一份企劃，都是通往未來商業領袖的敲門磚。」</p>
+    <img src="2.png"width="300">
+      
+  </article>
+</section>
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
